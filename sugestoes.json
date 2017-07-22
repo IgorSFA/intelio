@@ -1,0 +1,5 @@
+{
+	"vendaConjunta" :[{"produto1":"Picanha", "produto2": "Cerveja"}, {"produto1": "Pão", "produto2": "Leite"}],
+	
+	"promoDia" : [ {"produtos": ["Biscoito","Pizza"], "diaSemana":"segunda"} , {"produtos": ["Picanha","Cerveja"], "diaSemana": "sexta"}]
+}
