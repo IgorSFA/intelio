@@ -1,11 +1,33 @@
 <?php	
 	$local = "localhost";
 	$user = "root";
-	$key = "96folhas";
+	$key = "";
 	
 	$connect = mysqli_connect($local,$user, $key);
 
-	mysqli_select_db($connect, "Intelio") or die("Não foi possivel selecionar o banco de dados."); //acessa db 
+	mysqli_select_db($connect, "Intelio") or die("Não foi possivel selecionar o banco de dados."); //acessa db
+
+	$consulta = "SELECT * FROM revendedor";
+	$resultado = mysqli_query($connect, $consulta) or die ("Falha na execução da consulta."); //acessa grade clientes 
+
+	/*//Login
+	if ( isset($_POST["email"]) && isset($_POST["senha"]) ){ //isset para pegar os dados do input
+		$user = $_POST["email"];
+		$key = $_POST["senha"];
+
+		//Checar se usuario e senha estão corretos
+		while($linha = mysqli_fetch_assoc($resultado)){  //Funcão para percorrer todas as linhas
+
+			$usuario = $linha["Email"];
+			$senha = $linha["Senha"];
+
+			if( $usuario == $user && $senha == $key){
+				$_SESSION['email'] = $user;
+				$_SESSION['senha'] = $key;
+				header('location:site.php');
+			} 
+		}
+	}*/
 
 	//Cadastrar
 		if( isset($_POST["email"]) && isset($_POST["empresa"]) && isset($_POST["senha"]) ){
@@ -22,11 +44,12 @@
    if(isset($_FILES['filecsv'])){
 
       $ext = strtolower(substr($_FILES['filecsv']['name'],-4)); //Pegando extensão do arquivo
-      $name = $_FILES['filecsv']['name'].$ext;
+      $name = $_FILES['filecsv']['name'];
       $dir = 'uploads/'; //Diretório para uploads
 
       move_uploaded_file($_FILES['filecsv']['tmp_name'], $dir.$name); //Fazer upload do arquivo
    }
+
 	//Ler Excel
 	//Open the file.
 	/*$fileHandle = fopen("teste.csv", "r");

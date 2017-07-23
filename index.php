@@ -192,41 +192,41 @@
 
     <section id="contact" class="contact bg-primary">
         <div class="container">
-    <form class="form-horizontal" method="post" action="index.php">
-        <div class="form-group">
-          <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-          <div class="col-sm-10">
-            <input type="email" class="form-control" name="email" id="inputEmail3" placeholder="Email">
-          </div>
-        </div>
+            <form class="form-horizontal" method="POST" enctype="multipart/form-data" action="#contact">
+                <div class="form-group">
+                  <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" name="email" id="inputEmail3" placeholder="Email">
+                  </div>
+                </div>
 
-        <div class="form-group">
-          <label for="inputEmpresa3" class="col-sm-2 control-label">Nome empresa</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" name="empresa" id="inputEmpresa3" placeholder="Nome empresa">
-          </div>
-        </div>
+                <div class="form-group">
+                  <label for="inputEmpresa3" class="col-sm-2 control-label">Nome empresa</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" name="empresa" id="inputEmpresa3" placeholder="Nome empresa">
+                  </div>
+                </div>
 
-        <div class="form-group">
-          <label for="inputPassword3" class="col-sm-2 control-label">Senha</label>
-          <div class="col-sm-10">
-            <input type="password" class="form-control" name="senha" id="inputEmpresa3" placeholder="Senha">
-          </div>
-        </div>
+                <div class="form-group">
+                  <label for="inputPassword3" class="col-sm-2 control-label">Senha</label>
+                  <div class="col-sm-10">
+                    <input type="password" class="form-control" name="senha" id="inputEmpresa3" placeholder="Senha">
+                  </div>
+                </div>
 
-         <div class="form-group">
-          <label for="inputProdutosd3" class="col-sm-2 control-label">Produtos</label>
-          <div class="col-sm-10">
-            <input type="file" class="form-control" name="filecsv" id="inputEmpresa3" placeholder="Produtos">
-          </div>
-        </div>
- 
-        <div class="form-group">
-          <div class="col-sm-offset-2 col-sm-10">
-            <button type="submit" class="btn btn-default">Cadastrar dados</button>
-          </div>
-        </div>
-      </form>
+                 <div class="form-group">
+                  <label for="inputProdutosd3" class="col-sm-2 control-label">Produtos</label>
+                  <div class="col-sm-10">
+                    <input type="file" class="form-control" name="filecsv" id="inputEmpresa3" placeholder="Produtos">
+                  </div>
+                </div>
+         
+                <div class="form-group">
+                  <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-default">Cadastrar dados</button>
+                  </div>
+                </div>
+            </form>
             <!--<h2>We <i class="fa fa-heart"></i> new friends!</h2>
             <ul class="list-inline list-social">
                 <li class="social-twitter">
@@ -239,7 +239,6 @@
                     <a href="#"><i class="fa fa-google-plus"></i></a>
                 </li>
             </ul>-->
-
         </div> 
     </section>
 
