@@ -10,10 +10,10 @@
 	$consulta = "SELECT * FROM revendedor";
 	$resultado = mysqli_query($connect, $consulta) or die ("Falha na execução da consulta."); //acessa grade clientes 
 
-	/*//Login
-	if ( isset($_POST["email"]) && isset($_POST["senha"]) ){ //isset para pegar os dados do input
-		$user = $_POST["email"];
-		$key = $_POST["senha"];
+	//Login
+	if ( isset($_POST["email_login"]) && isset($_POST["senha_login"]) ){ //isset para pegar os dados do input
+		$user = $_POST["email_login"];
+		$key = $_POST["senha_login"];
 
 		//Checar se usuario e senha estão corretos
 		while($linha = mysqli_fetch_assoc($resultado)){  //Funcão para percorrer todas as linhas
@@ -22,12 +22,12 @@
 			$senha = $linha["Senha"];
 
 			if( $usuario == $user && $senha == $key){
-				$_SESSION['email'] = $user;
-				$_SESSION['senha'] = $key;
-				header('location:site.php');
+				$_SESSION['email_login'] = $user;
+				$_SESSION['senha_login'] = $key;
+				header('location:user.php');
 			} 
 		}
-	}*/
+	}
 
 	//Cadastrar
 		if( isset($_POST["email"]) && isset($_POST["empresa"]) && isset($_POST["senha"]) ){
