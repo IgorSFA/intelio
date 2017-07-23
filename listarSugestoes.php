@@ -1,10 +1,3 @@
-<style type="text/css">
-	.estilo{
-		color: green;
-	}
-
-</style>
-
 <?php
 	$info = file_get_contents("sugestoes.json");
 	$lendo = json_decode($info);
@@ -39,7 +32,5 @@
 
 	$promoDia .=']}';
 	$json = $vendaConjunta.$promoDia;
-	
-	$final = json_encode($json,JSON_UNESCAPED_UNICODE);
-	echo $final;
+	echo $json;
 ?>

@@ -1,0 +1,16 @@
+
+
+android.support.v7.widget.AppCompatButton{f3d1703 VFED..C. ...P.... 444,501-882,645 #7f0b005f app:id/button2}
+android.support.v7.widget.AppCompatButton{29a854b9 VFED..C. ...P.... 444,792-1099,936 #7f0b005e app:id/button1}
+android.support.v7.widget.AppCompatButton{3bf0205f VFED..C. ...P.... 444,288-1275,432 #7f0b0060 app:id/button}
+android.support.v7.widget.AppCompatButton{3bf0205f VFED..C. ...P.... 444,288-1275,432 #7f0b0060 app:id/button}
+android.support.v7.widget.AppCompatButton{f3d1703 VFED..C. ...P.... 444,288-1275,432 #7f0b0060 app:id/button}
+android.support.v7.widget.AppCompatButton{f3d1703 VFED..C. ...P.... 444,288-1275,432 #7f0b0060 app:id/button}
+android.support.v7.widget.AppCompatButton{f3d1703 VFED..C. ...P.... 444,288-1275,432 #7f0b0060 app:id/button}
+sexta,mortadela,cerveja,picanha
+quarta,cerveja,,
+quarta,cerveja,,
+quarta,cerveja,,
+segunda,pao,suco,picanha
+segunda,pao,suco,picanha
+quarta,cerveja

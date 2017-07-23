@@ -1,7 +1,7 @@
 <?php	
 	$local = "localhost";
 	$user = "root";
-	$key = "96folhas";
+	$key = "7fb6a0e62fefcec3641059ccfc791505e5af75299063ca7d";
 	
 	$connect = mysqli_connect($local,$user, $key);
 
